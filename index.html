@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Registro para vacunación COVID-19</h1>
+
+   <table id="tabla">
+      <form action="" method="get" name="formRegistro" onsubmit="return validar_formulario();">
+        <tr>
+          <td> <label for="nombre">Nombre: </label></td> <td><input class="inputText" type="text" id="nombre" name="nombre" /></td>
+        </tr>
+        <tr>
+          <td>  <p> Usuario:  </p></td><td><input class="inputText type="text" id="username" name="username" required/></td>
+        </tr> 
+        <tr>
+          <td><p> Sexo: </p> </td>
+          <td>
+          <label for="sexoh">Hombre</label><input type="radio" id="sexoh" name="sexo" value="h"/>
+          <label for="sexom">Mujer</label><input type="radio" name="sexo" id="sexom" value="m" />
+        </td>
+        </tr>
+        <tr>
+          <td> <p> Correo: </p> </td>
+          <td><input class="inputText type="text" id="correo" name="correo" maxlength="100" />
+          </td>
+        </tr>
+        <td><p>
+          Contraseña: </p>
+        </td>
+        <td><input class="inputText type" type="password" id="password" name="password" />
+        </td>
+        </tr>
+        <tr><td colspan="2">
+        <p class="terminos">
+          <input type="checkbox" name="condiciones" id="terminos"/><label for="terminos"> Declaro haber leido y
+            acepto <br> las condiciones generales del programa <br> y la normativa sobre
+            protección de datos</label> 
+        </p></td>
+        </tr>
+        <tr><td colspan="2"><button type="submit" value="Enviar" id="enviarForm">Enviar</button></td></tr>
+        
+      </form>
+   </table>
+  </body>
+</html>
