@@ -11,7 +11,7 @@ form {
   padding: 16px;
   border-radius: 10px;
   margin: auto;
-  background-color: #ccc;
+  
 }
 
 form input {
@@ -50,9 +50,20 @@ button {
 #tabla{
   display: flex;
   justify-content: center;
+  background-color: rgb(243, 243, 243);
 }
 
 body{
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
+}
+
+#imageview{
+
+  padding: 10px;
+}
+
+#imageview:hover{
+
+ content: url(image/viewIcon.png);
 }

@@ -24,3 +24,13 @@ function validar_formulario() {
     return false;
   }
 }
+
+function mostrarPassword(){
+
+  document.getElementById("password").setAttribute('type', 'text');
+}
+
+function ocultarPassword(){
+  document.getElementById("password").setAttribute('type', 'password');
+
+}
